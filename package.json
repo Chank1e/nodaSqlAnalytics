@@ -1,0 +1,26 @@
+{
+  "name": "noda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chank1e/nodaSqlAnalytics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chank1e/nodaSqlAnalytics/issues"
+  },
+  "homepage": "https://github.com/Chank1e/nodaSqlAnalytics#readme",
+  "dependencies": {
+    "chart.js": "^2.5.0",
+    "express": "^4.15.2",
+    "http": "0.0.0",
+    "mysql": "^2.13.0",
+    "socket.io": "^1.7.3"
+  }
+}
