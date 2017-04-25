@@ -21,15 +21,19 @@ var data;
 
 
 io.on('connection', function(socket){
-    io.emit('answer',data);
+  //socket.on('query',function(msg){
+    //console.log(msg)
+    connection.query('SELECT * from `cars`', function (error, results, fields) {
+      if (error) throw error;
+      io.emit('answer',results);
+      
+    //});
+  });
+
 });
 /* serves all the static files */
 app.get(/^(.+)$/, function(req, res){
     res.sendfile( __dirname + req.params[0]);
-});
-
-io.on('connection', function(socket){
-  console.log('a user connected');
 });
 
 http.listen(3000, function(){
